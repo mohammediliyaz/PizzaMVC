@@ -7,7 +7,15 @@ use \Core\View;
 class Add extends \Core\Controller
 {
 
+    protected function before()
+    {
 
+
+    }
+protected function after()
+    {
+
+    }
     public function indexAction()
     {
 

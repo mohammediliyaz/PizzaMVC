@@ -12,7 +12,7 @@ class Home extends \Core\Controller
 protected function before()
     {
 
-        
+
     }
 protected function after()
     {
