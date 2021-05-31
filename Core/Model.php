@@ -14,8 +14,8 @@ abstract class Model
 
         if ($db === null) {
             $host = 'localhost';
-            $dbname = 'MyPizzas';
-            $username = 'john';
+            $dbname = 'mypizzas';
+            $username = 'iliyaz';
             $password = 'test123';
 
             try {
