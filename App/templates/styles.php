@@ -23,6 +23,9 @@ form {
 .pizzatitle{
   font-size:2vh;
 }
+.pizzatitlee{
+  font-size:4vh;
+}
 .moreinfotitle{
   font-size:2vh;
 }

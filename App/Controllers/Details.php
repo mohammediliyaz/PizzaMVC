@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Controllers;
-
+use App\Models\Detailsdb;
 use \Core\View;
 
 
@@ -17,8 +17,9 @@ protected function after()
 
     }
 
-    public function indexAction()
+    public function indexAction($id = 0)
     {
+        $result = Detailsdb::getAll($id);
         View::render("Details/index.php");
 
     }
