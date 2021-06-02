@@ -1,6 +1,6 @@
 <?php
+use App\Models\Detailsdb;
 
-use App\Controllers\Details;
 
 
 if (isset($_POST['delete'])) {
@@ -20,8 +20,7 @@ if (isset($_POST['delete'])) {
 
 if (isset($_GET['id'])) {
 
-  $results = Details->indexAction($_GET['id']);
-    // $result = Detailsdb::getAll($_GET['id']);
+    $result = Detailsdb::getAll($_GET['id']);
     $pizza = $result[0];
 
 }
