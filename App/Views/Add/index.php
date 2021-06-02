@@ -55,44 +55,7 @@ if (isset($_POST['submit'])) {
 
 
 
-<!DOCUMENT html>
-<html>
-<head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-<meta charset="UTF-8"></meta>
-
-<style type="text/css">
-	  .brand{
-	  	background: #cbb09c !important;
-	  }
-  	.brand-text{
-  		color: #cbb09c !important;
-  	}
-      form{
-  		max-width: 460px;
-  		margin: 20px auto;
-  		padding: 20px;
-  	}
-      .pizza{
-      width: 100px;
-      margin: 40px auto -30px;
-      display: block;
-      position: relative;
-      top: -30px;
-    }
-  </style>
-</head>
-</head>
-<body>
-<nav class="white z-depth-0">
-    <div class="container"><h1>
-
-      <a href="/" class="brand-logo brand-text">Pizza</a></h1>
-      <ul id="nav-mobile" class="right hide-on-small-and-down">
-        <li><a href="add" class="btn brand z-depth-0">Add a Pizza</a></li>
-      </ul>
-    </div>
-  </nav>
+<?php require('C:\xampp\htdocs\pizzaMVC\App\templates\header.php'); ?>
   <section class="container grey-text">
 	<h4 class="center">Add a Pizza</h4>
 	<form class="white" action="add" method="POST">
@@ -110,8 +73,4 @@ if (isset($_POST['submit'])) {
 		</div>
 	</form>
 </section>
-<footer class="section">
-		<div class="center grey-text">&copy; Copyright 2021 Pizzas</div>
-	</footer>
-</body>
-</html>
+<?php require('C:\xampp\htdocs\pizzaMVC\App\templates\footer.php'); ?>
