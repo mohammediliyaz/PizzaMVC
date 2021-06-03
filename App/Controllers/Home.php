@@ -6,6 +6,7 @@ use \Core\View;
 use App\Models\Homedb;
 
 
+
 class Home extends \Core\Controller
 {
 
@@ -26,4 +27,5 @@ protected function after()
         View::render("Home/index.php",[$pizzas]);
 
     }
+
 }

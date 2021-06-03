@@ -1,5 +1,5 @@
 <?php
-use App\Models\Adddb;
+use App\Controllers\Details;
 
 $email = $title = $ingredients = '';
 $errors = array('email' => '', 'title' => '', 'ingredients' => '');
@@ -43,7 +43,7 @@ if (isset($_POST['submit'])) {
 		$title =  $_POST['title'];
 		$ingredients =  $_POST['ingredients'];
 
-		if (Adddb::setAll($email,$title,$ingredients)) {
+		if(Details::setdata($email,$title,$ingredients)){
 			header('Location:/');
 		} else {
 			echo 'something went wrong!';
