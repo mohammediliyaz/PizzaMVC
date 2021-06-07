@@ -17,7 +17,7 @@ if (isset($_POST['submit'])) {
 	}
 
 
-	if (empty($_POST['title'])) {
+	if (empty($_POST['title'])){
 		$errors['title'] = 'A title is required';
 	} else {
 		$title = $_POST['title'];
